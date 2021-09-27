@@ -1,0 +1,35 @@
+@import '../../scss/index.scss';
+
+
+.MenuDesktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //background-color: red;
+
+    .menu-links {
+
+        display: flex;
+        flex-direction: row;
+
+
+        a {
+            color: $white;
+
+           
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 2px;
+
+            margin-right: 34px;
+
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: $raw-sienna;
+        }
+    }
+}

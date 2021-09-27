@@ -1,0 +1,160 @@
+@import '../../scss/index.scss';
+
+.StarProductBig {
+    width: 100%;
+    max-width: 1110px;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: $raw-sienna;
+    color: $white;
+
+    overflow: hidden;
+
+    margin-bottom: 24px;
+
+    @include md {
+        margin-bottom: 32px;
+    }
+
+    @include xxl {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .star-product-big-image {
+
+        position: relative;
+
+        margin-top: 64px;
+        margin-bottom: 40px;
+
+        @include md {
+            margin-top: 61px;
+            margin-bottom: 76px;
+        }
+        img {
+            
+            height: 190px;
+            width: 158px;
+
+            @include md {
+                height: 216px;
+                width: 180px;
+            }
+
+            @include xxl {
+                position: absolute;
+
+                z-index: 4;
+
+                height: 458px;
+                width: 381px;
+
+                top: -155px;
+                right: 140px;
+            }
+        }
+
+        svg {
+            position: absolute;
+
+            z-index: 0;
+
+            top: -185px;
+            right: -200px;
+
+
+            height: 558px;
+            width: 558px;
+
+            @include md {
+                top: -380px;
+                right: -380px;
+
+                height: 944px;
+                width: 944px;
+            }
+
+            @include xxl {
+                top: -300px;
+                right: -135px;
+            }
+        }
+    }
+
+    .star-product-big-informations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        max-width: 280px;
+        margin-bottom: 55px;
+
+        @include md {
+            max-width: 349px;
+
+            margin-bottom: 64px;
+        }
+
+        @include xxl {
+            margin-top: 133px;
+            margin-bottom: 124px;
+            margin-right: 95px;
+
+            align-items: flex-start;
+        }
+
+        h1 {
+            
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 1.3px;
+            text-align: center;
+
+            margin-bottom: 24px;
+
+            @include md {
+                font-size: 56px;
+                line-height: 58px;
+                letter-spacing: 2px;
+            }
+
+            @include xxl {
+                text-align: left;
+            }
+            
+        }
+
+        p {
+            
+            
+            font-size: 15px;
+            font-weight: 200;
+            line-height: 25px;
+            letter-spacing: 0px;
+            text-align: center;
+
+            opacity: 0.75;
+
+            margin-bottom: 24px;
+
+            @include md {
+                margin-bottom: 65px;
+            }
+
+            @include xxl {
+                text-align: left;
+                margin-bottom: 40px;
+            }
+            
+        }
+    }
+}

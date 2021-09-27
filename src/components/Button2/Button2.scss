@@ -1,0 +1,33 @@
+@import '../../scss/index.scss';
+
+.Button2 {
+
+    display: flex;
+    justify-content: center;
+
+    button {
+        border: 1px solid $black;
+
+        color: $black;
+        background-color: rgba(255, 255, 255, 0);
+
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-align: center;
+
+        padding: 15px 30px;
+
+        transition: all 0.3s ease-in-out;
+
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        color: $white;
+        background-color: $black;
+    }
+
+}

@@ -1,0 +1,10 @@
+@import '../../scss/index.scss'; 
+
+.Earphones {
+    margin-top: 90px;
+
+    @include xxl {
+        margin-top: 96px;
+
+    }
+}

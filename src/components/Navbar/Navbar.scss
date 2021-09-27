@@ -1,0 +1,59 @@
+@import '../../scss/index.scss';
+
+
+.Navbar {
+    background-color: $black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+
+    z-index: 8;
+
+    @include xxl {
+        height: 97px;
+    }
+    .navbar-container {
+        
+        margin: 0px 24px;
+        
+        width: 100%;
+        max-width: 1110px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+        
+
+        .navbar-subcontainer {
+           
+            
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+
+            @include xxl {
+                flex-direction: row;
+            }
+            .logo {
+                width: 143px;
+
+                @include xxl {
+                    margin-right: 197px;
+                }
+            }
+        }
+
+        .cart {
+            width: 23px;
+        }
+    }
+}

@@ -1,0 +1,134 @@
+@import '../../scss/index.scss';
+
+.NewProduct {
+    color: $white;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #191919;
+
+    .new-product-container {
+        background-image: url('../../assets/home/mobile/image-header.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+
+        
+        width: 100%;
+        max-width: 375px;
+        
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        //box-sizing: border-box;
+
+        @include md {
+            background-image: url('../../assets/home/tablet/image-header.jpg');
+            background-size: cover;
+            background-position: bottom;
+
+            max-width: 768px;
+        }
+
+        @include xxl {
+            background-image: url('../../assets/home/desktop/image-hero.jpg');
+            background-size: cover;
+            background-position: bottom;
+            max-width: 1110px;
+
+            align-items: flex-start;
+        }
+        .new-product-informations {
+            //box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 108px 5px 112px 5px;
+
+            max-width: 328px;
+
+            @include md {
+                padding: 126px 24px 167px 24px;
+            }
+
+            @include xxl {
+                align-items: flex-start;
+
+                max-width: 396px;
+
+                padding: 128px 0px 158px 0px;
+            }
+
+            h2 {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 10px;
+                text-align: center;
+
+                opacity: 0.5;
+
+                margin-bottom: 16px;
+
+                @include md {
+                    margin-bottom: 24px;
+                }
+
+                @include xxl {
+                    text-align: left;
+                }
+            }
+
+            h1 {
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 40px;
+                letter-spacing: 1.3px;
+                text-align: center;
+
+                margin-bottom: 24px;
+
+                @include md {
+                    font-size: 56px;
+                    line-height: 58px;
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
+
+                @include xxl {                 
+                    text-align: left;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 200;
+                line-height: 25px;
+                letter-spacing: 0px;
+                text-align: center;
+
+                opacity: 0.75;
+
+                margin-bottom: 28px;
+
+                @include md {
+                    margin-bottom: 40px;
+                }
+
+                @include xxl {
+                    text-align: left;
+                }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../scss/index.scss';
+
+.Home {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-top: 90px;
+
+    width: 100%;
+    
+    .home-container {
+
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+
+        padding: 0px 24px;
+    
+        @include md {
+            padding: 0px 40px;
+        }
+
+        .ShopCardWrapper-home-container {
+            width: 100%;
+            margin: 40px 0px 120px 0px;
+    
+            @include md {
+                margin: 96px 0px 96px 0px;
+            }
+    
+            @include xxl {
+                margin: 120px 0px 168px 0px;
+            }
+        }
+    
+        .home-star-products {
+            display: flex;
+            flex-direction: column;
+    
+            align-items: center;
+    
+            width: 100%;
+        }
+
+        .company-presentation-home-container {
+            display: flex;
+            flex-direction: column;
+    
+            align-items: center;
+            
+            width: 100%;
+        }
+
+    }
+    
+}

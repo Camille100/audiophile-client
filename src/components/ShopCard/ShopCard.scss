@@ -1,0 +1,93 @@
+@import '../../scss/index.scss';
+
+.ShopCard {
+
+    position: relative !important;     
+
+    width: 100%;
+
+    cursor: pointer;
+
+    @include md {
+        width: 100%;
+        margin: 0px 10px;
+    }
+    a {
+        color: $black;
+
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+                    
+        img {
+            position: absolute;
+            
+            height: 135px;
+            bottom: 80px;
+
+            @include xxl {
+                height: 182px;
+                bottom: 90px;
+            }
+        }
+
+        .menu-card {
+            
+            
+            background-color: $cultured-grey;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+            width: 100%;
+
+            padding-top: 88px;
+            padding-bottom: 22px;
+
+            border-radius: 8px;
+
+            @include xxl {
+                padding-top: 116px;
+                padding-bottom: 30px;
+            }
+
+
+            h1 {
+
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: 1.07px;
+                text-align: center;
+
+                margin-bottom: 17px;
+
+                @include xxl {
+                    margin-bottom: 15px;
+
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 1.3px;
+                }
+            }
+
+            
+        }
+        
+    }
+
+    
+}
+
+.menu-speakers {
+    margin-top: 68px;
+    margin-bottom: 68px;
+
+    @include md {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
